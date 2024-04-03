@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root
+{
+	--theme-color: #da5730;
+}
+
+body
+{
+	height: 100vh;
+	background-color: #f2f2f2;
+	overflow-x: hidden;
+
+}
+
+
+
+header
+{
+	background-color: var(--theme-color);
+	height: 50px;
+	font-weight: 500;
+}
+header .nav-link
+{
+	color: white !important;
+}
+header #navbarSupportedContent
+{
+	background-color: var(--theme-color);
+}
+header .nav-link:hover
+{
+	transition: 0.3s;
+	color: #ddd1d1 !important;
+}
+header .user-icon
+{
+	padding: 0.4rem;
+    color: white !important;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 40px;
+    text-align: center;
+}
+header .navbar-toggler:focus
+{
+	box-shadow: none;
+}
+
+.bg-img-1
+{
+	min-height: calc(100vh - 50px);
+	background: url("https://www.efsa.europa.eu/sites/default/files/news/food-donations.jpg") no-repeat center;
+	background-size: cover;
+}
+.bg-img-2
+{
+	min-height: calc(100vh - 50px);
+	background: url("https://www.goldlawny.com/wp-content/uploads/2023/11/nonprofit-worker_s.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.color-theme
+{
+	color: var(--theme-color);
+}
+
+.btn
+{
+	padding: 6px 15px;
+	font-size: 18px;
+	color: white;
+	background-color: var(--theme-color);
+	border-radius: 0px;
+	font-family: "Josefin Sans", sans-serif;
+}
+.btn-danger
+{
+	background-color: rgb(223, 28, 28);
+}
+.btn:hover
+{
+	box-shadow: 3px 4px 6px 0px grey;
+	color: white;
+}
+
+#carousel img
+{
+	width: 100vw;
+	height: calc(100vh - 50px);
+	object-fit: cover;
+	object-position: center;
+}
+#carousel .carousel-control-prev-icon, #carousel .carousel-control-next-icon
+{
+	transform: scaleX(1.5) scaleY(2);
+	background-color: #000000;
+	cursor: pointer;
+}
+
+.trbg{
+	background: rgba( 255, 255, 255, 0.5 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.form-date-input
+{
+	display: block;
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+	border: 1px solid #ced4da;
+}
+.form-date-input:focus
+{
+	box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+	outline: none;
+}
+
+.text-pending
+{ color: rgb(243, 172, 18) !important; }
+.text-rejected
+{ color: red !important; }
+.text-accepted
+{ color: green !important; }
+.text-assigned
+{ color: blue !important; }
+.text-collected
+{ color: #3f51b5 !important; }
+
+
+.AI{
+	background-color: black;
+}
+.AI:hover{
+	background-color: #3f51b5;
+}
+.logo{
+	position: relative;
+	left: -25%;
+}
+.navbar{
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.alerts-wrapper
+{
+	position: absolute;
+	right: 0px;
+	width: fit-content;
+	font-weight: bold;
+	animation: moveLeft 0.1s linear;
+	z-index: 100;
+}
+
+.alerts-wrapper .alert-danger
+{
+	color: white;
+	background-color: #e22a2a;
+}
+.alerts-wrapper .alert-success
+{
+	color: white;
+	background-color: #1fa64e;
+}
+
+
+@keyframes moveLeft {
+	from { right: -100px; }
+	to { right: 0px; }
+}
+
